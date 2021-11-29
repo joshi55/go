@@ -21,7 +21,7 @@ var (
     spock  uint64     = 1<<64 - 1
     
     // complex 64 and complex128 types
-    mccoy  complex128 = math.cmplx.Sqrt(-5 + 12i)
+    mccoy  complex128 = cmplx.Sqrt(-5 + 12i)
 )
 
 func main() {
