@@ -25,7 +25,7 @@ func main() {
     fmt.Println("len:", len(m))
 
     // get rid of the "key", k2
-    delete(m, "k2")
+  //  delete(m, "k2")
     
     // no more "key", k2
     fmt.Println("map:", m)
@@ -34,7 +34,7 @@ func main() {
     // this second value can be used to determine if a key exists
     // of if it is missing from the map
     _, prs := m["k2"]
-    fmt.Println("prs:", prs)
+    fmt.Println("prschecking:", prs)
 
     // declare and initialize a map all one line
     n := map[string]int{"foo": 1, "bar": 2}
