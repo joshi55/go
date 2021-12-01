@@ -10,8 +10,8 @@ import (
 
 // expects input, "p" to be a string
 // will return os.File object
-//func createFile(p string) *os.File {
-func createFile(p string) *string {
+func createFile(p string) *os.File {
+//func createFile(p string) *string {
     fmt.Println("Creating file...")
     f, err := os.Create(p)
     if err != nil {
@@ -45,7 +45,9 @@ func main() {
     f := createFile("/tmp/employeeList.txt")
     
     // after getting back a file object, we defer closing closeFile()
+    defer fmt.Println("before")
     defer closeFile(f)   // closeFile() will be executed at end of the enclosing
+    defer fmt.Println("after")
                          // function-- in this case, main()
     writeFile(f)
 }
