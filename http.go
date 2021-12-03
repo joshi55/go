@@ -15,6 +15,8 @@ func main() {
     http.HandleFunc("/", HielloHandler)
     fmt.Println("Server started at port 8089")
     log.Fatal(http.ListenAndServe(":8089", nil))      // listens on TCP network address for incoming HTTP requests
+    fmt.Println("testingt 8089") // this doesn't print why
+
 }
 
 // describes how to respond to the HTTP request
